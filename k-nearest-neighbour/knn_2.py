@@ -42,3 +42,4 @@ print("Optimal k with cross-validation: ", np.argmax(cross_valid_scores))
 print(confusion_matrix(target_test, predictions))
 print(accuracy_score(target_test,predictions))
 
+
