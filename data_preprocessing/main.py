@@ -2,6 +2,7 @@
 import re
 import pandas as pd
 import nltk
+from sklearn.feature_extraction.text import TfidfVectorizer
 nltk.download('stopwords')
 
 
