@@ -38,3 +38,4 @@ if __name__ == "__main__":
     vectorizer = TfidfVectorizer()
     X = vectorizer.fit_transform(df['text'])
     print(X.toarray())
+    
