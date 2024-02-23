@@ -33,4 +33,7 @@ if __name__ == "__main__":
     print(df[['tokens', 'stemmed']])
 
     # Convert Text into Numerical Representations
-    
+    df['text'] = df['tokens'].apply(lambda x: ' '.join(x))
+    vectorizer = TfidfVectorizer()
+    X = vectorizer.fit_transform(df['text'])
+    print(X.toarray())
