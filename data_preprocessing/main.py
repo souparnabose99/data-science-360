@@ -31,3 +31,6 @@ if __name__ == "__main__":
     stemmer = PorterStemmer()
     df['stemmed'] = df['tokens'].apply(lambda x: [stemmer.stem(word) for word in x])
     print(df[['tokens', 'stemmed']])
+
+    # Convert Text into Numerical Representations
+    
