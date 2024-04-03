@@ -23,8 +23,11 @@ if __name__ == "__main__":
     print(df)
 
     # Remove Stop Words
-
     stop_words = set(stopwords.words('english'))
     df['tokens'] = df['tokens'].apply(lambda x: [word for word in x if word not in stop_words])
     print(df['tokens'])
 
+    # Stemming and Lemmatization
+    stemmer = PorterStemmer()
+    df['stemmed'] = df['tokens'].apply(lambda x: [stemmer.stem(word) for word in x])
+    print(df[['tokens', 'stemmed']])
