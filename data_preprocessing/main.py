@@ -11,4 +11,5 @@ if __name__ == "__main__":
     print(df)
 
     # Normalize text
-
+    df['text'] = df['text'].str.lower()
+    print(df)
