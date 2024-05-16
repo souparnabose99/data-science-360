@@ -16,3 +16,7 @@ if __name__ == "__main__":
     df['text'] = df['text'].apply(lambda x: re.sub(r'[^\w\s]', '', x))
     print(df)
 
+    # Tokenize text
+    df['tokens'] = df['text'].str.split()
+    print(df)
+
