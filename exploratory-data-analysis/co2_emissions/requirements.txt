@@ -1,0 +1,3 @@
+hvplot
+jupyterlab
+panel
