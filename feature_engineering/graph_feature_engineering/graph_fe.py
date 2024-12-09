@@ -15,4 +15,7 @@ followers = pd.DataFrame({
     "following_id": [1, 1, 1, 3, 2, 1, 4, 2, 1, 1, 1, 2]
 })
 
+# Directed Graph initiation
+dir_graph = nx.DiGraph()
+
 
