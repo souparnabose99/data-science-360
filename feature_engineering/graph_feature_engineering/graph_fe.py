@@ -25,3 +25,7 @@ for _, row in accounts.iterrows():
 # Adding edges to the graph using dummy followers DataFrame
 for _, row in followers.iterrows():
     dir_graph.add_edge(row["follower_id"], username=row["following_id"])
+
+# Compute total degree for each node
+accounts["total_degree"] = accounts["user_id"].apply(lambda x: dir_graph.degree(x))
+
