@@ -18,4 +18,6 @@ followers = pd.DataFrame({
 # Directed Graph initiation
 dir_graph = nx.DiGraph()
 
+# Adding nodes to the graph using dummy accounts DataFrame
+# Adding edges to the graph using dummy followers DataFrame
 
