@@ -23,3 +23,5 @@ for _, row in accounts.iterrows():
     dir_graph.add_node(row["user_id"], username=row["username"])
 
 # Adding edges to the graph using dummy followers DataFrame
+for _, row in followers.iterrows():
+    dir_graph.add_edge(row["follower_id"], username=row["following_id"])
