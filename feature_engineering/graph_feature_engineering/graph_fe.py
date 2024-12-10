@@ -19,6 +19,7 @@ followers = pd.DataFrame({
 dir_graph = nx.DiGraph()
 
 # Adding nodes to the graph using dummy accounts DataFrame
-# Adding edges to the graph using dummy followers DataFrame
 for _, row in accounts.iterrows():
     dir_graph.add_node(row["user_id"], username=row["username"])
+
+# Adding edges to the graph using dummy followers DataFrame
