@@ -29,3 +29,6 @@ for _, row in followers.iterrows():
 # Compute total degree for each node
 accounts["total_degree"] = accounts["user_id"].apply(lambda x: dir_graph.degree(x))
 
+# Compute in degree for each node
+accounts["in_degree"] = accounts["in_degree"].apply(lambda x: dir_graph.in_degree(x))
+
