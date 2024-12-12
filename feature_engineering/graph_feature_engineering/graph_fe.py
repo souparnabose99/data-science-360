@@ -33,5 +33,5 @@ accounts["total_degree"] = accounts["user_id"].apply(lambda x: dir_graph.degree(
 accounts["in_degree"] = accounts["in_degree"].apply(lambda x: dir_graph.in_degree(x))
 
 # Compute out degree for each node
-accounts["out_degree"] = accounts["out_degree"].apply(lambda x: dir_graph.in_degree(x))
+accounts["out_degree"] = accounts["out_degree"].apply(lambda x: dir_graph.out_degree(x))
 
