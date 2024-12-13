@@ -27,6 +27,7 @@ for _, row in followers.iterrows():
     dir_graph.add_edge(row["follower_id"], username=row["following_id"])
 
 # Compute total degree for each node
+# G.degree(x) is the sum of the in-degree and out-degree of the node x
 accounts["total_degree"] = accounts["user_id"].apply(lambda x: dir_graph.degree(x))
 
 # Compute in degree for each node
