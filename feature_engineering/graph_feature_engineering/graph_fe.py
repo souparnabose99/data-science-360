@@ -38,3 +38,5 @@ accounts["in_degree"] = accounts["in_degree"].apply(lambda x: dir_graph.in_degre
 # G.out_degree(x) -> counts edges directed away from the node x
 accounts["out_degree"] = accounts["out_degree"].apply(lambda x: dir_graph.out_degree(x))
 
+print("account details:\n", accounts)
+
